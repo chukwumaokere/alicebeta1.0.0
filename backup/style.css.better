@@ -1,0 +1,70 @@
+/*Border-box reset*/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/*Chat styling*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userSettings{
+    margin-bottom: 20px;
+}
+
+.right {
+}
+
+.usertext {
+
+}
+
+.alicetext{
+
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.chat {
+    max-width: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.chat #chatOutput {
+    overflow-y: scroll;
+    height: 280px;
+    width: 100%;
+    border: 1px solid #777;
+    position: relative;
+}
+
+.chat #chatOutput p{
+    margin: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #bbb;
+    word-break: break-all;
+    white-space: normal;
+    max-width: 200px;
+}
+
+.chat #chatInput {
+    width: 75%;
+}
+
+.chat #chatSend {
+    width: 25%;
+}
+

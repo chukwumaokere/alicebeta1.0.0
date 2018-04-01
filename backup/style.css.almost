@@ -1,0 +1,78 @@
+/*Border-box reset*/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/*Chat styling*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userSettings{
+    margin-bottom: 20px;
+}
+
+/*
+.right {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+*/
+.usertext {
+
+}
+
+.alicetext{
+	background: #cecece;
+}
+
+
+.chat {
+    max-width: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.chat #chatOutput {
+    overflow-y: scroll;
+    height: 280px;
+    width: 100%;
+    border: 1px solid #777;
+    position: relative;
+}
+
+.right {
+	background: #147cfa;
+	float: right;
+}
+
+.chat #chatOutput p{
+	width: 50%;
+    margin: 20px;
+	margin-bottom: 30px;
+    padding: 5px;
+    border-bottom: 1px solid #bbb;
+    word-break: break-all;
+    white-space: normal;
+}
+
+.chat #chatInput {
+    width: 75%;
+}
+
+.chat #chatSend {
+    width: 25%;
+}
+
